@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1458e0, #e3e4e8);
+        }
+
+        header {
+            background: linear-gradient(135deg, #1458e0, #e3e4e8);
+            color: black;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .button {
+            background: rgb(255, 255, 255);
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .button:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .button img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            filter: grayscale(50%);
+            transition: filter 0.3s;
+        }
+
+        .button:hover img {
+            filter: grayscale(0);
+        }
+
+        .button .info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .button .info h2 {
+            margin: 10px 0;
+            font-size: 1.6em;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .button .info p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .button .info button {
+            background: linear-gradient(135deg, #1458e0, #e3e4e8);
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .button .info button:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <h2>Gian Thyron Borabo Olic-olic</h2>
+
+    </header>
+    <div class="container">
+        
+        <div class="button">
+            <img src="about.png" alt="About me">
+            <div class="info">
+                <button onclick="location.href='page2.html'">View Details</button>
+            </div>
+        </div>
+        
+        <div class="button">
+            <img src="icon.png" alt="Educational Background">
+            <div class="info">
+              
+                <button onclick="location.href='page3.html'">View Details</button>
+            </div>
+        </div>
+        
+        <div class="button">
+            <img src="skill.png" alt="Skills">
+            <div class="info">
+              
+                <button onclick="location.href='page4.html'">View Details</button>
+            </div>
+        </div>
+       
+        <div class="button">
+            <img src="proj.png" alt="Projects">
+            <div class="info">
+               
+                <button onclick="location.href='page5.html'">View Details</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
